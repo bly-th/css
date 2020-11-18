@@ -1,0 +1,18 @@
+.split-pair {
+  --split-pair-space: var(--step-5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: var(--split-pair-align, center);
+  margin: calc((var(--split-pair-space) / 2) * -1) 0 0 calc((var(--split-pair-space) / 2) * -1);
+}
+
+.split-pair > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--split-pair-break, 48rem) - (100% - var(--split-pair-space))) * 999);
+  padding: calc(var(--split-pair-space) / 2) 0 0 calc(var(--split-pair-space) / 2);
+}
+
+.split-pair > :nth-last-child(n + 3),
+.split-pair > :nth-last-child(n + 3) ~ * {
+  flex-basis: 100%;
+}

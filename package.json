@@ -1,0 +1,30 @@
+{
+  "name": "blyth-css",
+  "version": "0.1.0",
+  "description": "A CSS toolkit for the modern developer.",
+  "main": "src/index.js",
+  "blyth": {
+    "tokensOutputPath": "css/tokens.css",
+    "utilityOutputPath": "css/utility"
+  },
+  "bin": {
+    "blyth": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryangittings/blyth-css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryangittings/blyth-css/issues"
+  },
+  "homepage": "https://github.com/ryangittings/blyth-css#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clean-css": "^4.2.1",
+    "cosmiconfig": "^6.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
