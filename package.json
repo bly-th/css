@@ -1,7 +1,7 @@
 {
   "name": "blyth-css",
   "version": "0.1.0",
-  "description": "A CSS toolkit for the modern developer.",
+  "description": "A CSS toolkit for front-end developers.",
   "main": "src/index.js",
   "blyth": {
     "tokensOutputPath": "css/tokens.css",
