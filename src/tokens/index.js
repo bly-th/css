@@ -34,7 +34,7 @@ module.exports = () => {
 
   // Add the custom props and the media query-less clases
   css += customProperties(config);
-  css += generator(config, ['responsive', 'standard']);
+  css += generator(config);
 
   // If there's some breakpoints, generate the classes that are responsive
   Object.keys(config.theme.breakpoints).forEach((key) => {

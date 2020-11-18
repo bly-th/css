@@ -13,11 +13,13 @@ module.exports = (config, targets, prefix = '') => {
 
   Object.entries(config.tokens).forEach((token) => {
     Object.entries(token[1].items).forEach((tokenItem) => {
-      if (token[1].property) {
-        response += `
-        .${token[0]}-${tokenItem[0]} {
-          ${token[1].property}: ${tokenItem[1]}; 
-        }`.trim();
+      if (!targets || (targets && token[1][targets])) {
+        if (token[1].property) {
+          response += `
+          .${prefix}${token[0]}-${tokenItem[0]} {
+            ${token[1].property}: ${tokenItem[1]}; 
+          }`.trim();
+        }
       }
     });
   });
