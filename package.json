@@ -1,6 +1,6 @@
 {
   "name": "blyth-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CSS toolkit for front-end developers.",
   "main": "src/index.js",
   "blyth": {
