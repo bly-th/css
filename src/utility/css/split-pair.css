@@ -1,5 +1,6 @@
 .split-pair {
-  --split-pair-space: var(--step-5);
+  --split-pair-space: 2rem;
+
   display: flex;
   flex-wrap: wrap;
   align-items: var(--split-pair-align, center);
