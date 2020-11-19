@@ -1,4 +1,4 @@
-# Blyth CSS
+<img src="https://blythcss.dev/img/logo.svg" width="360" alt="Blyth CSS">
 
 ## Documentation
 
