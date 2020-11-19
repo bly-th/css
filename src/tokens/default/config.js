@@ -26,16 +26,16 @@ const theme = {
 module.exports = {
   theme: theme,
   tokens: {
-    'bg': {
+    bg: {
       items: theme.colors,
       property: 'background',
     },
-    'color': {
+    color: {
       items: theme.colors,
       property: 'color',
       variable: true,
     },
-    'font': {
+    font: {
       items: theme.fonts,
       property: 'font-family',
       variable: true,
@@ -48,7 +48,7 @@ module.exports = {
       items: theme.sizeScale,
       property: 'margin-bottom',
     },
-    'leading': {
+    leading: {
       items: {
         tight: '1.2',
         mid: '1.5',
@@ -56,7 +56,7 @@ module.exports = {
       },
       property: 'line-height',
     },
-    'measure': {
+    measure: {
       items: {
         long: '75ch',
         short: '60ch',
@@ -76,16 +76,16 @@ module.exports = {
       items: theme.sizeScale,
       property: 'padding-left',
     },
-    'size': {
+    size: {
       items: theme.sizeScale,
       variable: true,
     },
-    'text': {
+    text: {
       items: theme.sizeScale,
-      reponsive: true,
+      responsive: true,
       property: 'font-size',
     },
-    'weight': {
+    weight: {
       items: {
         light: '300',
         regular: '400',
