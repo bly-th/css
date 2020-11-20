@@ -1,5 +1,5 @@
 {
-  "name": "blyth-css",
+  "name": "@bly-th/css",
   "version": "0.2.0-alpha.2",
   "description": "A CSS toolkit for front-end developers.",
   "main": "src/index.js",
@@ -9,6 +9,9 @@
   },
   "bin": {
     "blyth": "./src/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
