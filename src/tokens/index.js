@@ -49,10 +49,9 @@ module.exports = () => {
 
   // Create the directory if it doesn't already exist
   if (!fs.existsSync(outputPath)) {
-    shell.exec(`mkdir -p ${outputPath.replace(/[^\/]*$/, '')}`);
+    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''));
   }
 
-  shell.exec(`echo "${css}" > ${outputPath}`);
-
+  fs.writeFile(outputPath, css);
   console.log(chalk.green('Token utility classes generated!'));
 };
