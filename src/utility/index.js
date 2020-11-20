@@ -15,7 +15,7 @@ module.exports = () => {
   }
 
   if (!fs.existsSync(outputPath)) {
-    shell.exec(`mkdir -p ${outputPath.replace(/[^\/]*$/, '')}`);
+    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''));
   }
 
   fs.copyFile(inputPath, outputPath, (err) => {
