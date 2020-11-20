@@ -52,6 +52,7 @@ module.exports = () => {
     fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
   }
 
-  fs.writeFile(outputPath, css);
-  console.log(chalk.green('Token utility classes generated!'));
+  fs.writeFile(outputPath, css, () => {
+    console.log(chalk.green('Token utility classes generated!'));
+  });
 };
