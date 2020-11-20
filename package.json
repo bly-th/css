@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryangittings/blyth-css"
+    "url": "git+https://github.com/bly-th/css"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryangittings/blyth-css/issues"
+    "url": "https://github.com/bly-th/css/issues"
   },
-  "homepage": "https://github.com/ryangittings/blyth-css#readme",
+  "homepage": "https://github.com/bly-th/css/blyth-css#readme",
   "dependencies": {
     "chalk": "^3.0.0",
     "clean-css": "^4.2.1",
