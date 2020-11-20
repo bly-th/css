@@ -49,7 +49,7 @@ module.exports = () => {
 
   // Create the directory if it doesn't already exist
   if (!fs.existsSync(outputPath)) {
-    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''));
+    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
   }
 
   fs.writeFile(outputPath, css);

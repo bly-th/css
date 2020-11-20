@@ -15,7 +15,7 @@ module.exports = () => {
   }
 
   if (!fs.existsSync(outputPath)) {
-    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''));
+    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
   }
 
   fs.copyFile(inputPath, outputPath, (err) => {
