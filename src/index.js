@@ -7,7 +7,6 @@ let tokens = require('./tokens/index.js');
 
 // The main organ grinder
 const init = () => {
-  console.log(process.argv[2]);
   switch (process.argv[2]) {
     case 'config':
       config();
