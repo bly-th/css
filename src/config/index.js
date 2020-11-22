@@ -4,13 +4,21 @@ const chalk = require('chalk');
 const path = require('path');
 const fs = require('fs');
 
-// The main organ grinder
-module.exports = () => {
+const run = async () => {
   const inputPath = path.join(__dirname, `../tokens/default/config.js`);
   const outputPath = './blyth.config.js';
 
-  fs.copyFile(inputPath, outputPath, (err) => {
-    if (err) throw err;
-    console.log(chalk.green('Config initialised!'));
-  });
+  await fs.promises.copyFile(inputPath, outputPath);
 };
+
+// The main organ grinder
+module.exports = async () => {
+  try {
+    await run();
+    console.log(chalk.green('Config initialised!'));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+module.exports.run = run;

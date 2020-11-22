@@ -51,10 +51,15 @@ const run = async () => {
     fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
   }
 
-  fs.writeFile(outputPath, css, () => {
-    console.log(chalk.green('Token utility classes generated!'));
-  });
+  await fs.promises.writeFile(outputPath, css);
 };
 
-module.exports = run;
+module.exports = async () => {
+  try {
+    await run();
+    console.log(chalk.green('Token utility classes generated!'));
+  } catch (error) {
+    console.error(error);
+  }
+};
 module.exports.run = run;
