@@ -11,14 +11,14 @@
     "test": "jest"
   },
   "bin": {
-    "blyth": "./src/index.js"
+    "blyth": "src/index.js"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bly-th/css"
+    "url": "git+https://github.com/bly-th/css.git"
   },
   "keywords": [],
   "author": "",
