@@ -3,7 +3,6 @@
 const chalk = require('chalk');
 const CleanCSS = require('clean-css');
 const fs = require('fs');
-const shell = require('shelljs');
 
 const customProperties = require('./components/custom-properties.js');
 const generator = require('./components/generator.js');

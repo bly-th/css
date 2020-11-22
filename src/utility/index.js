@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const shell = require('shelljs');
 const chalk = require('chalk');
 
 const projectConfig = require('../helpers/project-config.js')();
