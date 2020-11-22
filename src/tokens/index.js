@@ -10,7 +10,7 @@ const config = require('../helpers/token-config.js')();
 const projectConfig = require('../helpers/project-config.js')();
 
 // The main organ grinder
-module.exports = () => {
+const run = async () => {
   let css = '';
   const cleanCSS = new CleanCSS();
 
@@ -55,3 +55,6 @@ module.exports = () => {
     console.log(chalk.green('Token utility classes generated!'));
   });
 };
+
+module.exports = run;
+module.exports.run = run;

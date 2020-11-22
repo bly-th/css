@@ -68,3 +68,6 @@ pgdata
 
 # Mac slime
 .DS_Store
+
+# CSS output
+css
