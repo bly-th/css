@@ -4,8 +4,8 @@
   "description": "A CSS toolkit for front-end developers.",
   "main": "src/index.js",
   "blyth": {
-    "tokensOutputPath": "./css/tokens.css",
-    "utilityOutputPath": "./css/utility"
+    "tokensOutputPath": "css/tokens.css",
+    "utilityOutputPath": "css/utility"
   },
   "scripts": {
     "test": "jest"
