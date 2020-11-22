@@ -70,5 +70,5 @@ pgdata
 .DS_Store
 
 # Blyth output
-css
+/css
 blyth.config.js
