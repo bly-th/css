@@ -3,7 +3,6 @@
 const chalk = require('chalk');
 const CleanCSS = require('clean-css');
 const fs = require('fs');
-const shell = require('shelljs');
 
 const customProperties = require('./components/custom-properties.js');
 const generator = require('./components/generator.js');
@@ -11,7 +10,7 @@ const config = require('../helpers/token-config.js')();
 const projectConfig = require('../helpers/project-config.js')();
 
 // The main organ grinder
-module.exports = () => {
+const run = async () => {
   let css = '';
   const cleanCSS = new CleanCSS();
 
@@ -49,9 +48,18 @@ module.exports = () => {
 
   // Create the directory if it doesn't already exist
   if (!fs.existsSync(outputPath)) {
-    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''));
+    fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
   }
 
-  fs.writeFile(outputPath, css);
-  console.log(chalk.green('Token utility classes generated!'));
+  await fs.promises.writeFile(outputPath, css);
 };
+
+module.exports = async () => {
+  try {
+    await run();
+    console.log(chalk.green('Token utility classes generated!'));
+  } catch (error) {
+    console.error(error);
+  }
+};
+module.exports.run = run;

@@ -2,5 +2,5 @@
   width: 100%;
   margin: 0 auto;
   max-width: var(--wrapper-max-width, 80rem);
-  padding: 0 1rem;
+  padding: 0 var(--wrapper-padding, 1rem);
 }

@@ -68,3 +68,7 @@ pgdata
 
 # Mac slime
 .DS_Store
+
+# Blyth output
+/css
+blyth.config.js
