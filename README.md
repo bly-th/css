@@ -1,8 +1,20 @@
 <img src="https://blythcss.dev/img/logo.svg" width="360" alt="Blyth CSS">
 
-## Documentation
+Made with ❤️ for HTML & CSS programmers who love lightweight, clean, reusable and scalable code. Blyth will allow you to organise properties every site has like fonts, colours, spacing, sizing and basically, anything you want.
 
-Documentation coming soon.
+## 📃 Documentation
+
+- [The docs](https://blythcss.dev/docs/)
+- [Why Blyth?](https://blythcss.dev/why/)
+- [Blyth on npm](https://www.npmjs.com/package/@bly-th/css)
+
+⭐️ Help us out by leaving a star this repo! ⭐️
+
+## Installation
+
+`npm install @blyth/css -g`
+
+Read our [Getting Started guide.](https://blythcss.dev/docs/getting-started/)
 
 ## Contributing
 
