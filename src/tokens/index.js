@@ -52,12 +52,12 @@ const run = async () => {
   }
 
   await fs.promises.writeFile(outputPath, css);
+  console.log(chalk.green('Token utility classes generated!'));
 };
 
 module.exports = async () => {
   try {
     await run();
-    console.log(chalk.green('Token utility classes generated!'));
   } catch (error) {
     console.error(error);
   }

@@ -20,6 +20,7 @@ const run = async (tokenNames) => {
       }
 
       await fs.promises.copyFile(inputPath, outputPath);
+      console.log(chalk.green('Utility classes generated!'));
     });
   }
 };
@@ -28,7 +29,6 @@ module.exports = async () => {
   const tokens = process.argv.slice(4);
 
   await run(tokens);
-  console.log(chalk.green('Utility classes generated!'));
 };
 
 module.exports.run = run;
