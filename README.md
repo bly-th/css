@@ -8,7 +8,7 @@ Made with ❤️ for HTML & CSS programmers who love lightweight, clean, reusabl
 - [Why Blyth?](https://blythcss.dev/why/)
 - [Blyth on npm](https://www.npmjs.com/package/@bly-th/css)
 
-⭐️ Help us out by leaving a star this repo! ⭐️
+⭐️ Found Blyth useful? Don't forget to start! ⭐️
 
 ## Installation
 
