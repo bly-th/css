@@ -3,3 +3,7 @@
   grid-template-columns: repeat(var(--auto-grid-method, auto-fill), minmax(var(--auto-grid-min, 16rem), 1fr));
   grid-gap: var(--auto-grid-gap, 1rem);
 }
+
+.auto-grid--fit {
+  --auto-grid-method: auto-fill;
+}
