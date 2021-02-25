@@ -11,3 +11,12 @@
   display: block;
   padding-top: calc(var(--embed-ratio, (9 / 16)) * 100%);
 }
+
+.embed iframe,
+.embed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
