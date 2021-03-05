@@ -5,5 +5,5 @@
 }
 
 .auto-grid--fit {
-  --auto-grid-method: auto-fill;
+  --auto-grid-method: auto-fit;
 }
