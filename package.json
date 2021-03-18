@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/bly-th/css/issues"
   },
-  "homepage": "https://github.com/bly-th/css/blyth-css#readme",
+  "homepage": "https://blythcss.dev",
   "dependencies": {
     "chalk": "^3.0.0",
     "clean-css": "^4.2.1",
