@@ -95,6 +95,7 @@ module.exports = {
       items: theme.textScale,
       responsive: true,
       property: 'font-size',
+      variable: true,
     },
     weight: {
       items: {
