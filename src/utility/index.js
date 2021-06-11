@@ -11,8 +11,7 @@ const run = async (tokenNames) => {
       const outputPath = `${projectConfig.utilityOutputPath}/${token}.css`;
 
       if (!fs.existsSync(inputPath)) {
-        console.log(chalk.red("Utility doesn't exist"));
-        return;
+        throw "Utility doesn't exist";
       }
 
       if (!fs.existsSync(outputPath)) {
@@ -20,15 +19,8 @@ const run = async (tokenNames) => {
       }
 
       await fs.promises.copyFile(inputPath, outputPath);
-      console.log(chalk.green('Utility classes generated!'));
     });
   }
 };
 
-module.exports = async () => {
-  const tokens = process.argv.slice(4);
-
-  await run(tokens);
-};
-
-module.exports.run = run;
+module.exports = run;

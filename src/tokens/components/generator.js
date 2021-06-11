@@ -15,9 +15,24 @@ module.exports = (config, targets, prefix = '') => {
     Object.entries(token[1].items).forEach((tokenItem) => {
       if (!targets || (targets && token[1][targets])) {
         if (token[1].property) {
+          let properties = [];
+          const hasMultipleProperties = Array.isArray(token[1].property);
+
+          if (!hasMultipleProperties) {
+            properties = [token[1].property];
+          } else {
+            properties = token[1].property;
+          }
+
+          const propertiesString = properties
+            .map((property) => {
+              return `${property}: ${tokenItem[1]};`;
+            })
+            .join('');
+
           response += `
           .${prefix}${token[0]}-${tokenItem[0]} {
-            ${token[1].property}: ${tokenItem[1]}; 
+            ${propertiesString}
           }`.trim();
         }
       }

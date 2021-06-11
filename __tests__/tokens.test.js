@@ -1,5 +1,5 @@
 const fs = require('fs');
-const tokens = require('../src/tokens/index').run;
+const tokens = require('../src/tokens/index');
 
 const projectConfig = require('../src/helpers/project-config.js')();
 
