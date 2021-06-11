@@ -1,5 +1,5 @@
 const fs = require('fs');
-const config = require('../src/config/index').run;
+const config = require('../src/config/index');
 
 test('config file is initialised', async () => {
   await config();

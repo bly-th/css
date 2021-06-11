@@ -16,19 +16,14 @@ const run = async () => {
 
   // Bail out if the path isn't defined
   if (!projectConfig || !projectConfig.hasOwnProperty('tokensOutputPath')) {
-    console.log(chalk.red(`Please determine a path. You can do this by setting 'outputPath' in your config.`));
-    console.log(chalk.blue('Exiting.'));
-    return;
+    throw "Please determine a path. You can do this by setting 'outputPath' in your config.";
   }
 
   const outputPath = projectConfig.tokensOutputPath;
 
   // The path has to contain a filename so we need to bail if that's not the case
   if (outputPath.indexOf('.css') < 0) {
-    console.log(chalk.red(`Please add a css file to your path.`));
-    console.log(chalk.red(`Example: path/to/my/folder/tokens.css`));
-    console.log(chalk.blue('Exiting.'));
-    return;
+    throw 'Please add a css file to your path. Example: path/to/my/folder/tokens.css';
   }
 
   // Add the custom props and the media query-less clases
@@ -52,14 +47,6 @@ const run = async () => {
   }
 
   await fs.promises.writeFile(outputPath, css);
-  console.log(chalk.green('Token utility classes generated!'));
 };
 
-module.exports = async () => {
-  try {
-    await run();
-  } catch (error) {
-    console.error(error);
-  }
-};
-module.exports.run = run;
+module.exports = run;
