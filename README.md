@@ -12,7 +12,7 @@ Made with ❤️ for HTML & CSS programmers who love lightweight, clean, reusabl
 
 ## Installation
 
-`npm install @blyth/css -g`
+`npm i @bly-th/css -g`
 
 Read our [Getting Started guide.](https://blythcss.dev/docs/getting-started/)
 
