@@ -18,7 +18,7 @@ const run = async (tokenNames) => {
         fs.mkdirSync(outputPath.replace(/[^\/]*$/, ''), { recursive: true });
       }
 
-      await fs.promises.copyFile(inputPath, outputPath);
+      fs.copyFileSync(inputPath, outputPath);
     });
   }
 };

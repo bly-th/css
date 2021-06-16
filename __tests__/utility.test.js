@@ -7,7 +7,7 @@ test('utility file is generated', async () => {
   await utility(['reset']);
 
   const outputPath = projectConfig.utilityOutputPath;
-  expect(fs.existsSync(`${outputPath}/auto-grid.css`)).toBe(true);
+  expect(fs.existsSync(`${outputPath}/reset.css`)).toBe(true);
 });
 
 test('chained utility first file is generated', async () => {
