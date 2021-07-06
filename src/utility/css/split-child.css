@@ -1,0 +1,11 @@
+.split-child {
+  display: flex;
+  align-items: var(--split-child-align, stretch);
+  gap: var(--split-child-space, 1rem);
+  flex-wrap: wrap;
+}
+
+.split-child > * {
+  min-width: var(--split-child-min-width, 18rem);
+  flex: 1;
+}
