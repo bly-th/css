@@ -1,13 +1,22 @@
 #!/usr/bin/env node
 
 const chalk = require('chalk');
-let utility = require('./utility/index.js');
-let config = require('./config/index.js');
-let tokens = require('./tokens/index.js');
+const utility = require('./utility/index.js');
+const config = require('./config/index.js');
+const tokens = require('./tokens/index.js');
+const version = require('./version/index.js');
 
 // The main organ grinder
 const init = async () => {
   switch (process.argv[2]) {
+    case '-v':
+      try {
+        const v = await version();
+        console.log(chalk.green(`v${v}`));
+      } catch (error) {
+        console.log(chalk.red(error));
+      }
+      break;
     case 'config':
       try {
         await config();
