@@ -9,8 +9,7 @@ const theme = {
     dark: '#252525',
   },
   fonts: {
-    base: 'Helvetica, sans-serif',
-    serif: 'Georgia, serif',
+    base: '-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif',
   },
   sizeScale: {
     200: 'var(--space-3xs-2xs)',
@@ -61,6 +60,7 @@ module.exports = {
     },
     leading: {
       items: {
+        'extra-tight': '1.067',
         tight: '1.2',
         mid: '1.5',
         loose: '1.7',
@@ -83,10 +83,6 @@ module.exports = {
       items: theme.sizeScale,
       property: 'padding-bottom',
     },
-    'pad-left': {
-      items: theme.sizeScale,
-      property: 'padding-left',
-    },
     size: {
       items: theme.sizeScale,
       variable: true,
@@ -101,7 +97,7 @@ module.exports = {
       items: {
         light: '300',
         regular: '400',
-        mid: '600',
+        medium: '600',
         bold: '700',
       },
       property: 'font-weight',
