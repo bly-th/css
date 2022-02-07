@@ -1,7 +1,7 @@
 .split-child {
   display: flex;
   align-items: var(--split-child-align, stretch);
-  gap: var(--split-child-space, 1rem);
+  gap: var(--split-child-space, var(--size-400));
   flex-wrap: wrap;
 }
 
