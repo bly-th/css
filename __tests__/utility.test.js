@@ -11,7 +11,7 @@ test('utility file is generated', async () => {
 
 test('chained utility first file is generated', async () => {
   await utility(['embed', 'reset']);
-  expect(fs.existsSync(`${outputPath}/auto-grid.css`)).toBe(true);
+  expect(fs.existsSync(`${outputPath}/embed.css`)).toBe(true);
 });
 
 test('chained utility second file is generated', async () => {
