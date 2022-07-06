@@ -2,6 +2,7 @@
 
 const chalk = require('chalk');
 const utility = require('./utility/index.js');
+const composition = require('./composition/index.js');
 const config = require('./config/index.js');
 const tokens = require('./tokens/index.js');
 const version = require('./version/index.js');
@@ -30,6 +31,15 @@ const init = async () => {
         const tokens = process.argv.slice(4);
         await utility(tokens);
         console.log(chalk.green('Utility classes generated!'));
+      } catch (error) {
+        console.log(chalk.red(error));
+      }
+      break;
+    case 'composition':
+      try {
+        const tokens = process.argv.slice(4);
+        await composition(tokens);
+        console.log(chalk.green('Composition classes generated!'));
       } catch (error) {
         console.log(chalk.red(error));
       }

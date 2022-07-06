@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "blyth": {
     "tokensOutputPath": "css/tokens.css",
-    "utilityOutputPath": "css/utility"
+    "utilityOutputPath": "css/utility",
+    "compositionOutputPath": "css/composition"
   },
   "scripts": {
     "test": "jest"
