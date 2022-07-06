@@ -1,20 +1,20 @@
 const fs = require('fs');
-const utility = require('../src/utility/index');
+const composition = require('../src/composition/index');
 
 const projectConfig = require('../src/helpers/project-config.js')();
-const outputPath = projectConfig.utilityOutputPath;
+const outputPath = projectConfig.compositionOutputPath;
 
-test('utility file is generated', async () => {
-  await utility(['reset']);
+test('composition file is generated', async () => {
+  await composition(['grid']);
   expect(fs.existsSync(`${outputPath}/reset.css`)).toBe(true);
 });
 
 test('chained utility first file is generated', async () => {
-  await utility(['embed', 'reset']);
+  await composition(['grid', 'stack']);
   expect(fs.existsSync(`${outputPath}/auto-grid.css`)).toBe(true);
 });
 
 test('chained utility second file is generated', async () => {
-  await utility(['embed', 'reset']);
+  await composition(['grid', 'stack']);
   expect(fs.existsSync(`${outputPath}/reset.css`)).toBe(true);
 });
