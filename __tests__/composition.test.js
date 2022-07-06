@@ -6,15 +6,15 @@ const outputPath = projectConfig.compositionOutputPath;
 
 test('composition file is generated', async () => {
   await composition(['grid']);
-  expect(fs.existsSync(`${outputPath}/reset.css`)).toBe(true);
+  expect(fs.existsSync(`${outputPath}/grid.css`)).toBe(true);
 });
 
 test('chained utility first file is generated', async () => {
   await composition(['grid', 'stack']);
-  expect(fs.existsSync(`${outputPath}/auto-grid.css`)).toBe(true);
+  expect(fs.existsSync(`${outputPath}/grid.css`)).toBe(true);
 });
 
 test('chained utility second file is generated', async () => {
   await composition(['grid', 'stack']);
-  expect(fs.existsSync(`${outputPath}/reset.css`)).toBe(true);
+  expect(fs.existsSync(`${outputPath}/stack.css`)).toBe(true);
 });
