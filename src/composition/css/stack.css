@@ -4,5 +4,5 @@
   justify-content: var(--stack-justify);
   gap: var(--gutter, var(--size-400));
   flex-direction: var(--stack-direction);
-  flex-wrap: var(--stack-wrap);
+  flex-wrap: var(--stack-wrap, wrap);
 }
