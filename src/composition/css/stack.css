@@ -1,8 +1,5 @@
 .stack {
   display: flex;
-  align-items: var(--stack-align);
-  justify-content: var(--stack-justify);
-  gap: var(--gutter, var(--size-400));
-  flex-direction: var(--stack-direction);
-  flex-wrap: var(--stack-wrap, wrap);
+  gap: var(--size-400);
+  flex-wrap: wrap;
 }

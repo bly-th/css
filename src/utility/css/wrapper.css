@@ -1,6 +1,10 @@
 .wrapper {
-  width: 100%;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [wrapper-start] minmax(0, 120rem) [wrapper-end] 1fr [full-end];
+  gap: 0 var(--size--400);
   margin: 0 auto;
-  max-width: var(--wrapper-max-width, 80rem);
-  padding: 0 var(--wrapper-padding, var(--size-400));
+}
+
+.wrapper>* {
+  grid-column: var(--wrapper-column, wrapper);
 }

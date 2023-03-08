@@ -2,14 +2,8 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 0;
   overflow: hidden;
-}
-
-.embed:before {
-  content: '';
-  display: block;
-  padding-top: calc(var(--embed-ratio, (9 / 16)) * 100%);
+  aspect-ratio: 16/9;
 }
 
 .embed iframe,
