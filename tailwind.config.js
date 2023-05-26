@@ -2,7 +2,7 @@ const tailwindCSSVariables = require('@bly-th/tailwind-css-variables');
 const tailwindCustomUtilities = require('@bly-th/tailwind-custom-utilities');
 
 module.exports = {
-  content: ["./src/**/*.njk"],
+  content: ["test/**/*.html"],
   corePlugins: {
     preflight: false,
   },
