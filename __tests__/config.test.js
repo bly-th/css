@@ -4,6 +4,6 @@ const config = require('../src/config/index');
 test('config file is initialised', async () => {
   await config();
 
-  const outputPath = './blyth.config.js';
+  const outputPath = './tailwind.config.js';
   expect(fs.existsSync(outputPath)).toBe(true);
 });
