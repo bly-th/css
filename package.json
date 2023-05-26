@@ -9,7 +9,6 @@
     "compositionOutputPath": "css/composition"
   },
   "scripts": {
-    "tokens": "NODE_ENV=production npx tailwindcss -o css/tokens.css --watch",
     "test": "jest"
   },
   "bin": {
