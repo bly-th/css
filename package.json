@@ -1,6 +1,6 @@
 {
   "name": "@bly-th/css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CSS toolkit for front-end developers.",
   "main": "src/index.js",
   "blyth": {
