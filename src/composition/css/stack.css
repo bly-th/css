@@ -1,5 +1,0 @@
-.stack {
-  display: flex;
-  gap: var(--size-400);
-  flex-wrap: wrap;
-}
